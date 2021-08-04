@@ -1,0 +1,8 @@
+.footer {
+  width: 100%;
+  background: rgb(245, 244, 244);
+  padding: 150px 0 50px 0;
+}
+.footer p {
+  color: var(--light-font);
+}

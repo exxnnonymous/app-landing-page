@@ -1,0 +1,3 @@
+.service_icon::before {
+  background-image: url("./images/dot-bg.webp");
+}

@@ -1,0 +1,260 @@
+.downloadapp {
+  width: 100%;
+  padding: 100px 0 150px;
+  background-image: -webkit-linear-gradient(0deg, #6c19f6 0%, #f9218d 100%);
+}
+
+.animating-shape {
+  width: 50px;
+  height: 50px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animating-shape img {
+  width: 100%;
+  animation: heartbeat 1s infinite alternate;
+}
+@keyframes heartbeat {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+.downloadapp .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.download_info {
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+.download_info h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.download_info p {
+  color: #fff;
+  font-size: 1rem;
+  padding: 0 60px 20px 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.download_buttons {
+  width: 80%;
+  justify-content: flex-start;
+  display: flex;
+  color: #fff;
+}
+
+.download-button {
+  display: flex;
+  cursor: pointer;
+  background: hsl(230, 26%, 20%);
+  width: 180px;
+  height: 60px;
+  justify-content: flex-start;
+  padding-left: 20px;
+  border: 1px solid #1d2a67;
+  border-radius: 10px;
+  align-items: center;
+  color: #fff;
+}
+.download_buttons .download-button:nth-child(1) {
+  margin-right: 30px;
+}
+
+.download-icon {
+  margin-top: 5px;
+  margin-right: 10px;
+}
+.download-icon img {
+  width: 30px;
+  height: auto;
+}
+
+.download-icon .icon {
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: Flaticon;
+}
+
+.btn-text {
+}
+.btn-text span {
+  display: inline-block;
+  font-size: 0.6rem;
+}
+
+.btn-text h3 {
+  font-size: 1rem;
+  padding-bottom: 10px;
+  margin-top: -5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.download_banner {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.download_banner img {
+  width: 100%;
+}
+
+@media (max-width: 1300px) {
+  .download_info {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .download_info h1 {
+    font-size: 2.5rem;
+  }
+  .download_info p {
+    font-size: 0.9rem;
+  }
+
+  .download_buttons {
+    width: 100%;
+  }
+  .download-button {
+    width: 170px;
+  }
+  .download-icon {
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+  .download-icon img {
+    width: 25px;
+    height: auto;
+  }
+
+  .download-icon .icon {
+    font-size: 1.3rem;
+  }
+
+  .btn-text {
+  }
+  .btn-text span {
+    font-size: 0.5rem;
+  }
+
+  .btn-text h3 {
+    font-size: 0.9rem;
+    padding-bottom: 10px;
+    margin-top: -5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 950px) {
+  .download_info h1 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .downloadapp {
+    padding: 50px 0 100px;
+  }
+  .downloadapp .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .download_info {
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+  .download_banner {
+    flex: 0 0 90%;
+    max-width: 90%;
+    padding-top: 60px;
+  }
+}
+@media (max-width: 700px) {
+  .download_info h1 {
+    font-size: 2rem;
+  }
+  .download_info p {
+    font-size: 0.97rem;
+    padding-right: 120px;
+  }
+
+  .download_banner {
+    flex: 0 0 85%;
+    max-width: 85%;
+    padding-top: 70px;
+  }
+}
+@media (max-width: 550px) {
+  .download_info h1 {
+    font-size: 1.8rem;
+    width: 100%;
+  }
+  .download_info p {
+    font-size: 0.9rem;
+    padding-right: 50px;
+  }
+  .download-button {
+    width: 150px;
+    padding-left: 15px;
+  }
+
+  .btn-text h3 {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 450px) {
+  .download_info h1 {
+    font-size: 1.8rem;
+    width: 100%;
+  }
+  .download_info p {
+    font-size: 0.9rem;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 400px) {
+  .download_info h1 {
+    font-size: 1.4rem;
+    width: 100%;
+  }
+  .download_info p {
+    font-size: 0.85rem;
+    padding-right: 0px;
+  }
+  .download_info {
+    flex: 0 0 98%;
+    max-width: 98%;
+  }
+}
+@media (max-width: 370px) {
+  .download_buttons {
+    flex-direction: column;
+  }
+  .download-button {
+    margin-bottom: 10px;
+  }
+  .download_banner {
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+  .downloadapp {
+    padding: 50px 0 70px;
+  }
+}

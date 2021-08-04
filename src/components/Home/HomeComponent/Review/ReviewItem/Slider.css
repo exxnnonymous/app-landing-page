@@ -1,0 +1,10 @@
+.owl-dots {
+  margin-top: 50px !important;
+}
+.owl-dots .owl-dot span {
+  background-color: #f18e8e !important;
+}
+.owl-dots .owl-dot.active span {
+  transform: scale(1.8);
+  background-color: #e44848 !important;
+}

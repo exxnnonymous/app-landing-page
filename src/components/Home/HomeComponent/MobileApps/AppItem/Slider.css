@@ -1,0 +1,18 @@
+.slider {
+}
+
+@media (max-width: 1100px) {
+  .slider .owl-carousel .owl-item {
+    max-width: 220px !important;
+  }
+}
+@media (min-width: 1300px) {
+  .slider .owl-carousel .owl-item {
+    max-width: 280px !important;
+  }
+}
+@media (min-width: 1440px) {
+  .slider .owl-carousel .owl-item {
+    max-width: 290px !important;
+  }
+}

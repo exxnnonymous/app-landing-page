@@ -1,0 +1,22 @@
+.footer_copyright {
+  padding-left: 10px;
+}
+.footer_copyright p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+@media (max-width: 1300px) {
+  .footer_copyright {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .footer_copyright p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 550px) {
+  .footer_copyright {
+    padding-left: 0;
+  }
+}

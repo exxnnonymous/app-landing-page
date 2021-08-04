@@ -1,0 +1,132 @@
+.features_items_container .col {
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-bottom: 50px;
+  padding-left: 20px;
+}
+.features_item {
+  display: flex;
+  justify-content: center;
+}
+
+.features_icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-image: -webkit-linear-gradient(90deg, #e78ae9 0%, #926ef8 100%);
+  margin-right: 15px;
+}
+
+.features_icon span {
+  display: inline-block;
+  color: #fff;
+  font-size: 2rem;
+  font-family: Flaticon;
+}
+
+.features_caption {
+  flex: 0 0 77%;
+  max-width: 77%;
+}
+.features_caption h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.features_caption p {
+  font-size: 1rem;
+  color: var(--light-font);
+  font-weight: 400;
+}
+
+@media (max-width: 1100px) {
+  .features_caption h2 {
+    font-size: 1.2rem;
+  }
+  .features_caption p {
+    font-size: 0.9rem;
+  }
+  .features_icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .features_icon span {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 900px) {
+  .features_items_container .col {
+    flex: 0 0 48%;
+    max-width: 48%;
+    padding-left: 0px;
+  }
+  .features_item {
+    align-items: center;
+  }
+  .features_icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+
+  .features_icon span {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 700px) {
+  .features_items_container .col {
+    flex: 0 0 95%;
+    max-width: 95%;
+    margin-bottom: 20px;
+  }
+  .features_caption h2 {
+    font-size: 1.5rem;
+  }
+  .features_caption p {
+    font-size: 0.85rem;
+  }
+  .features_icon {
+    width: 70px;
+    height: 70px;
+    margin-right: 25px;
+  }
+
+  .features_icon span {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .features_items_container .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .features_caption p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+  .features_caption {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .features_icon {
+    margin-top: 10px;
+  }
+  .features_item {
+    align-items: flex-start;
+  }
+}
+@media (max-width: 400px) {
+  .features_caption {
+    flex: 0 0 70%;
+    max-width: 70%;
+  }
+  .features_icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+  }
+}

@@ -1,0 +1,265 @@
+.footer_row {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 100px;
+}
+
+.footer_row .col {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 0 20px;
+}
+.footer_row .col p {
+  color: var(--light-font);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.footer_row h4 {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.footer-links {
+  padding: 0;
+  margin: 0;
+}
+.footer-links li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+.footer-links li a {
+  color: var(--light-font);
+  display: inline-block;
+  padding: 2px 5px;
+  font-weight: 400;
+  transition: all 0.3s;
+}
+.footer-links li a:hover {
+  color: var(--light-purple);
+  font-weight: 500;
+  padding-left: 10px;
+}
+.footer .logo {
+  width: 100px;
+}
+.footer_row .col2 {
+  padding-left: 80px;
+}
+
+.footer_row .col3 {
+  padding-left: 50px;
+}
+
+.myForm {
+  margin-top: 30px;
+  height: 40px;
+  display: flex;
+}
+.myForm input[type="email"] {
+  display: inline-block;
+  width: 70%;
+  border: 0;
+  height: 100%;
+  outline: none;
+  background: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+.myForm input::placeholder {
+  font-size: 1rem;
+}
+
+.myForm button {
+  width: 22%;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  background: var(--button-purple);
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+}
+.myForm button:hover {
+  /* animation: fly 1s 1; */
+  background-color: var(--light-purple);
+}
+
+.footer_row .myForm button span {
+  font-family: "Flaticon";
+  display: inline-block;
+  margin-top: 5px;
+}
+
+@keyframes fly {
+  0% {
+    top: 5px;
+    right: 40px;
+    transform: rotate(80deg);
+  }
+  10% {
+    top: 7px;
+    right: 30px;
+    transform: rotate(60deg);
+  }
+  20% {
+    top: 3px;
+    right: 20px;
+    transform: rotate(20deg);
+  }
+  30% {
+    top: 0px;
+    right: 10px;
+    transform: rotate(10deg);
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  40% {
+    top: -2px;
+    right: 5px;
+    transform: rotate(10deg);
+    transform: scale(0.7);
+  }
+  50% {
+    top: -7px;
+    right: 0px;
+    transform: rotate(10deg);
+    transform: scale(0.4);
+  }
+  60% {
+    opacity: 0;
+    top: 5px;
+    right: 20px;
+  }
+  90% {
+    transform: scale(0);
+  }
+  95% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@media (max-width: 1100px) {
+  .footer .container {
+    padding: 0 10px;
+  }
+  .footer_row .col2 {
+    padding-left: 40px;
+  }
+
+  .footer_row .col3 {
+    padding-left: 20px;
+  }
+  .footer_row .col4 {
+    padding: 0;
+  }
+}
+@media (max-width: 900px) {
+  .footer_row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-bottom: 100px;
+  }
+  .footer_row .col {
+    flex: 0 0 33.3%;
+    max-width: 33.3%;
+    padding: 0 20px;
+  }
+  .footer .container {
+    padding: 0 10px;
+  }
+
+  .footer_row .col2 {
+    padding-left: 40px;
+  }
+
+  .footer_row .col3 {
+    padding-left: 20px;
+  }
+  .footer_row .col4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 20px;
+    margin-top: 50px;
+  }
+  .col4 p {
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .footer_row .col1 {
+    flex: 0 0 65%;
+    max-width: 65%;
+    padding: 0 20px;
+    margin-bottom: 40px;
+  }
+  .footer_row .col2 {
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding-left: 20px;
+  }
+
+  .footer_row .col3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 20px;
+  }
+  .footer_row .col4 {
+    flex: 0 0 70%;
+    max-width: 70%;
+    padding: 0 20px;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 550px) {
+  .footer_row .col1 {
+    flex: 0 0 90%;
+    max-width: 90%;
+    padding: 0px;
+    margin-bottom: 40px;
+  }
+  .footer_row .col2 {
+    flex: 0 0 85%;
+    max-width: 86%;
+    margin-bottom: 40px;
+    padding: 0;
+  }
+
+  .footer_row .col3 {
+    flex: 0 0 85%;
+    max-width: 85%;
+    padding: 0px;
+  }
+  .footer_row .col4 {
+    flex: 0 0 90%;
+    max-width: 90%;
+    padding: 0px;
+  }
+  .myForm input[type="email"] {
+    width: 75%;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer_row .col1 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .footer_row .col4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-right: 0;
+  }
+}

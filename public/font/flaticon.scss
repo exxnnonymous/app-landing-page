@@ -1,0 +1,53 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?805407586592f3f1abd438c919b5f73b") format("truetype"),
+url("./flaticon.woff?805407586592f3f1abd438c919b5f73b") format("woff"),
+url("./flaticon.woff2?805407586592f3f1abd438c919b5f73b") format("woff2"),
+url("./flaticon.eot?805407586592f3f1abd438c919b5f73b#iefix") format("embedded-opentype"),
+url("./flaticon.svg?805407586592f3f1abd438c919b5f73b#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "support": "\f101",
+    "business-and-finance": "\f102",
+    "paper-plane": "\f103",
+    "approved": "\f104",
+    "paper-plane-1": "\f105",
+    "app-store": "\f106",
+    "apple": "\f107",
+);
+
+.flaticon-support:before {
+    content: map-get($flaticon-map, "support");
+}
+.flaticon-business-and-finance:before {
+    content: map-get($flaticon-map, "business-and-finance");
+}
+.flaticon-paper-plane:before {
+    content: map-get($flaticon-map, "paper-plane");
+}
+.flaticon-approved:before {
+    content: map-get($flaticon-map, "approved");
+}
+.flaticon-paper-plane-1:before {
+    content: map-get($flaticon-map, "paper-plane-1");
+}
+.flaticon-app-store:before {
+    content: map-get($flaticon-map, "app-store");
+}
+.flaticon-apple:before {
+    content: map-get($flaticon-map, "apple");
+}
