@@ -1,11 +1,11 @@
 import React from 'react'
 
-function ContactPage() {
+function Download() {
     return (
         <div className="container">
-            This is contact page
+            This is download page
         </div>
     )
 }
 
-export default ContactPage
+export default Download

@@ -3,6 +3,7 @@ import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import ContactPage from "./components/Contact/ContactPage";
 import Pages from "./components/Pages/Pages";
+import Download from "./components/Download/Download";
 import {
   BrowserRouter as Router,
   Switch,
@@ -24,6 +25,9 @@ export default function App() {
         <Switch>
           <Route exact path="/pages">
             <Pages />
+          </Route>
+          <Route exact path="/download">
+            <Download />
           </Route>
           <Route exact path="/contact">
             <ContactPage />

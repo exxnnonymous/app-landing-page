@@ -12,13 +12,12 @@ function NavItem({ hideNav }) {
 
   useEffect(() => {
 
-    if (window.location.href === "https://quizzical-dijkstra-716c00.netlify.app/pages" || window.location.href === "https://quizzical-dijkstra-716c00.netlify.app/contact")
-      setNav(false)
-    else {
+    if (window.location.pathname === "/")
       setNav(true)
+    else {
+      setNav(false)
     }
-  }, [location])
-  console.log(window.location.href)
+  }, [location]);
 
   if (nav) {
     return (

@@ -8,7 +8,6 @@ function Hero() {
   const [animate, setAnimate] = useState()
 
   window.addEventListener("resize", () => {
-    console.log(window.innerWidth)
     if (window.innerWidth <= 700) {
       setAnimate(false)
     }

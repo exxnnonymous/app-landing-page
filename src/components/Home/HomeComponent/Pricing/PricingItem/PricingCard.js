@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"
 import "./PricingCard.css";
 
 function PricingCard(props) {
@@ -14,7 +15,7 @@ function PricingCard(props) {
             <li>{data}</li>
           ))}
         </ul>
-        <a href="/" className="btn">GET STARTED</a>
+        <Link className="btn">GET STARTED</Link>
       </div>
     </div>
   );

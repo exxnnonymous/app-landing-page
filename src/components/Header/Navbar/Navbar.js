@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import NavItem from "./NavItem";
+import { Link } from "react-router-dom"
 import "./Navbar.css";
 
 
@@ -14,9 +15,9 @@ function Navbar() {
 
   return (
     <div className="navbar ">
-      <div className="logo">
+      <Link to="/" className="logo">
         <img src="./images/logo.png" alt="" />
-      </div>
+      </Link>
       <ul className={activeMenu ? "navbar_items show-nav " : "navbar_items"}>
         <NavItem hideNav={hideNav} />
       </ul>

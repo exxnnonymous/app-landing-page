@@ -2,7 +2,7 @@ import React from 'react'
 
 function Pages() {
     return (
-        <div>
+        <div className="container">
             This is pages
         </div>
     )

@@ -1,5 +1,6 @@
 import React from "react";
 import "./DownloadApp.css";
+import { Link } from "react-router-dom"
 
 function DownloadApp() {
   return (
@@ -16,7 +17,7 @@ function DownloadApp() {
               cillum dolore fug.
             </p>
             <div className="download_buttons">
-              <a href="/" className="download-button">
+              <Link to="/download" className="download-button">
                 <div className="download-icon">
                   <span className="flaticon-apple icon"></span>
                 </div>
@@ -24,8 +25,8 @@ function DownloadApp() {
                   <span>Available on the</span>
                   <h3>App Store</h3>
                 </div>
-              </a>
-              <a href="/" className="download-button">
+              </Link>
+              <Link to="/download" className="download-button">
                 <div className="download-icon">
                   <img src="./images/google-play.png" alt="" />
                 </div>
@@ -33,7 +34,7 @@ function DownloadApp() {
                   <span>Download from</span>
                   <h3>Google Play</h3>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="download_banner">

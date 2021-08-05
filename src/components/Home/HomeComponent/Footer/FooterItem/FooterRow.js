@@ -60,14 +60,14 @@ function FooterRow() {
           <p>Heaven fruitful doesn't over lesser in days. Appear</p>
           <form action="#" className="myForm">
             <input type="email" placeholder="Email Address" />
-            <button type="submit">
+            <button type="button">
               <span className="flaticon-paper-plane-1"></span>
             </button>
           </form>
         </div>
       </div>
 
-      
+
     </Router>
   );
 }
