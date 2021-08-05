@@ -12,7 +12,7 @@ function NavItem({ hideNav }) {
 
   useEffect(() => {
 
-    if (window.location.href === "http://localhost:3000/pages" || window.location.href === "http://localhost:3000/contact")
+    if (window.location.href === "https://quizzical-dijkstra-716c00.netlify.app/pages" || window.location.href === "https://quizzical-dijkstra-716c00.netlify.app/contact")
       setNav(false)
     else {
       setNav(true)
