@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import SliderItem from "./SliderItem";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
@@ -12,6 +12,27 @@ const sliderData = [
 ];
 
 function Slider() {
+  const [item, setItem] = useState(3)
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth <= 550) {
+      setItem(2)
+    }
+    else {
+      setItem(3)
+    }
+  });
+
+  useEffect(() => {
+
+    if (window.innerWidth <= 550) {
+      setItem(2)
+    }
+    else {
+      setItem(3)
+    }
+  }, [])
+
   return (
     <div className="slider">
       <OwlCarousel
@@ -20,6 +41,7 @@ function Slider() {
         autoplay
         autoplayTimeout={3000}
         smartSpeed={1000}
+        items={item}
       >
         {sliderData.map((data, index) => (
           <SliderItem key={index} imgUrl={data.imgUrl} />
