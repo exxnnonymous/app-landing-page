@@ -42,6 +42,7 @@ function Slider() {
         autoplayTimeout={3000}
         smartSpeed={1000}
         items={item}
+        dots={false}
       >
         {sliderData.map((data, index) => (
           <SliderItem key={index} imgUrl={data.imgUrl} />
