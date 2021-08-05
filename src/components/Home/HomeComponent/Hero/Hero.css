@@ -123,7 +123,7 @@
   .hero .row .col-left {
     flex: 0 0 90%;
     max-width: 90%;
-    margin-top: 20px;
+    margin-top: 60px;
   }
   .hero h1 {
     font-size: 3.2rem;
@@ -140,6 +140,9 @@
   }
 }
 @media (max-width: 550px) {
+  .hero {
+    height: 90vh;
+  }
   .hero .row .col-left {
     flex: 0 0 100%;
     max-width: 100%;
